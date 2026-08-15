@@ -1,26 +1,34 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
 
-# ignore .vscode folder
-.vscode
+# Django
+*.log
+db.sqlite3
+media/
+staticfiles/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Environment variables
+.env
 
-# testing
-/coverage
+# MySQL data
+data/mysql/db/
 
-# production
-/build
+# Virtual environment
+venv/
+env/
+.venv/
 
-# misc
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS files
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Jenkins / temporary files
+*.tmp
+
+# Docker
+docker-compose.override.yml
